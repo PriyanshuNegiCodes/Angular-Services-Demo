@@ -11,6 +11,6 @@ export class EmployeeListComponent {
 
   constructor(private list:EmployeeServiceService){}
   ngOnInit(){
-    this.employees=this.list.getEmployee().subscribe(data=>this.employees=data);
+    this.employees=this.list.getEmployee().subscribe(data=>this.employees=data, e=>alert("network error"));
   }
 }
