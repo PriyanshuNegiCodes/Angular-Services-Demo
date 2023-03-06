@@ -7,13 +7,15 @@ import { EmplooyeeDetailsComponent } from './emplooyee-details/emplooyee-details
 import { EmployeeServiceService } from './services/employee-service.service';
 import { SquareNumberComponent } from './square-number/square-number.component';
 import { FormsModule } from '@angular/forms';
-import {HttpClientModule} from '@angular/common/http'
+import {HttpClientModule} from '@angular/common/http';
+import { AddEmployeeComponent } from './add-employee/add-employee.component'
 @NgModule({
   declarations: [
     AppComponent,
     EmployeeListComponent,
     EmplooyeeDetailsComponent,
-    SquareNumberComponent
+    SquareNumberComponent,
+    AddEmployeeComponent
   ],
   imports: [
     BrowserModule,

@@ -14,4 +14,8 @@ export class EmployeeServiceService {
   {
   return this.http.get<IEmployee[]>('http://localhost:3000/Employee')
   }  
+
+  sendEmployee(emp:IEmployee){
+    return this.http.post<IEmployee>('http://localhost:3000/Employee', emp);
+  }
 }

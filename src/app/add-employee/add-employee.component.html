@@ -1,0 +1,16 @@
+<p>add-employee works!</p>
+<div >
+    <h3>Enter Employee Details</h3>
+    <div>
+        <input [(ngModel)]="employee.id" type="text" placeholder="Enter id">
+    </div>
+    <div>
+        <input [(ngModel)]="employee.name" type="email" placeholder="Enter name">
+    </div>
+    <div>
+        <input [(ngModel)]="employee.age" type="text" placeholder="Enter Age">
+    </div>
+    <div>
+        <input type="button" (click)="add()" value="Add">
+    </div>
+</div>
