@@ -1,0 +1,7 @@
+<!-- <input type="number" #numberva>
+    <button (click)="square(numberva.value)">Square</button>
+    <p >Result: {{ result }}</p> -->
+
+    <input type="number" [(ngModel)]="numberInput">
+    <button (click)="squareNum()">Square</button>
+    <p >Result: {{result }}</p>
